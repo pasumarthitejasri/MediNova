@@ -13,10 +13,9 @@ app.use(express.static(__dirname));
 
 
 // Routes
-const userRoutes = require("./routes/userRoutes");
-const appointmentRoutes = require("./routes/appointmentRoutes");
-const doctorRoutes = require("./routes/doctorRoutes");
-
+const userRoutes = require("./userRoutes");
+const appointmentRoutes = require("./appointmentRoutes");
+const doctorRoutes = require("./doctorRoutes");
 
 app.use("/api/users", userRoutes);
 
