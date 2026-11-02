@@ -7,7 +7,7 @@ async function loadAppointments(){
 
 
     const response = await fetch(
-        "http://localhost:5000/api/appointments"
+        "https://medinova-b2p0.onrender.com/api/appointments"
     );
 
 
