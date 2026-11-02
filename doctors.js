@@ -1,7 +1,7 @@
 const doctorContainer = document.getElementById("doctorContainer");
 
 
-fetch("http://localhost:5000/api/doctors")
+const API = "https://medinova-b2p0.onrender.com/api/doctors";
 
 .then(response => response.json())
 
