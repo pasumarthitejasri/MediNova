@@ -9,6 +9,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+app.use(express.static(__dirname));
 
 
 // Routes
@@ -27,7 +28,7 @@ app.use("/api/doctors", doctorRoutes);
 
 app.get("/", (req,res)=>{
 
-    res.send("MediNova Backend Running");
+    res.sendFile(__dirname + "/index.html");
 
 });
 
