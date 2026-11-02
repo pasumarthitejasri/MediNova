@@ -37,7 +37,7 @@ document.getElementById("reason").value
 
 
 const response = await fetch(
-"http://localhost:5000/api/appointments/book",
+"https://medinova-b2p0.onrender.com/api/appointments",
 {
 
 method:"POST",
